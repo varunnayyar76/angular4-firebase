@@ -1,0 +1,13 @@
+<div>
+  <h1>Hello {{displayName}}</h1>
+  <button ion-button outline (click)="signIn()">Login</button> 
+	<button ion-button outline (click)="signInWithFacebook()">Login with Facebook</button> <br>
+  <button ion-button outline (click)="signInWithGoogle()">Login with Google</button> <br>
+  <button ion-button outline (click)="signOut()">Logout</button>
+</div>
+
+ <ul>
+    <li *ngFor="let item of items | async">
+      {{ item.name }}
+    </li>
+  </ul>
